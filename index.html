@@ -1,28 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>台球追分计分器</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      -webkit-tap-highlight-color: transparent;
-      user-select: none;
-    }
-  </style>
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
-  }
-}
-</script>
-</head>
-<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
-  <div id="root"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>台球追分计分器</title>
+
+    <!-- 先留着也行：只是 warning，不会导致白屏 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+    <div id="root"></div>
+
+    <!-- ✅ Vite/React 入口：你项目里有 index.tsx 就用这个 -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
