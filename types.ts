@@ -4,6 +4,12 @@ export interface Player {
   name: string;
   score: number;
   color: string;
+  stats: {
+    WIN: number;
+    GOLD_9: number;
+    SMALL_GOLD: number;
+    BIG_GOLD: number;
+  };
 }
 
 export interface ScoreItem {
@@ -13,6 +19,7 @@ export interface ScoreItem {
   label: string;
   points: number;
   timestamp: number;
+  type?: string; // 记录得分类型
 }
 
 export interface ScoreState {
