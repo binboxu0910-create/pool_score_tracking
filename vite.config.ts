@@ -4,7 +4,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
-    return {base: '/pool_score_tracking/',
+    return {
+        base: '/pool_score_tracking/',
       server: {
         port: 3000,
         host: '0.0.0.0',
